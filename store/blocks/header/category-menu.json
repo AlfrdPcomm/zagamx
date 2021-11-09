@@ -1,0 +1,320 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass":"topmenu"
+    },
+    "children": [
+      "menu-item#more",
+      "menu-item#category-home"      
+    ]
+  },
+  "menu-item#category-apparel": {
+    "props": {
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Apparel & Accessories",
+        "text": "Apparel & Accessories"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-apparel"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-apparel": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-apparel"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-apparel": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [      
+      "menu-item#category-apparel-clothing",
+      "menu-item#category-apparel-accessories",
+      "menu-item#category-apparel-eyeglasses"
+    ]
+  },
+  "menu-item#category-apparel-clothing": {
+    "props": {
+      "id": "menu-item-category-apparel-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+
+  "menu-item#category-apparel-accessories": {
+    "props": {
+      "id": "menu-item-category-apparel-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#category-apparel-eyeglasses": {
+    "props": {
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Eyeglasses",
+        "text": "Eyeglasses"
+      }
+    }
+  },
+
+  
+  "menu-item#category-home": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pijamas",
+        "noFollow": false,
+        "tagTitle": "Pijamas",
+        "text": "PIJAMAS" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },
+  "menu-item#more": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa interior",
+        "noFollow": true,
+        "tagTitle": "ROPA INTERIOR",
+        "text": "ROPA INTERIOR"
+      },
+      "blockClass": "topmenu"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#more"
+    ]
+  },
+  "vtex.menu@2.x:submenu#more": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "flex-layout.row#menu-more"
+    ]
+  },
+  "flex-layout.row#menu-more": {
+    "children": [
+      "flex-layout.col#boxerscol",
+      "flex-layout.col#playerascol"
+    ]
+  },"flex-layout.col#boxerscol":{
+    "children":[
+      "vtex.menu@2.x:menu#boxersmenu"      
+    ],"props":{
+      "width":"100%"
+    }
+  },"vtex.menu@2.x:menu#boxersmenu":{
+    "props":{
+      "orientation":"vertical"
+    },"children":[
+      "menu-item#boxerscol",
+      "menu-item#boxer",
+      "menu-item#trunk",
+      "menu-item#boxertodos"
+    ]
+  },
+  "menu-item#boxerscol": {
+    "props": {
+      "id": "menu-item-boxercol",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "BOXERS",
+      "text": "BOXERS",
+      "itemProps": {
+        "type": "internal",
+          "noFollow": false 
+      },
+      "blockClass":"titcol" 
+    }
+  },"menu-item#boxer": {
+    "props": {
+      "id": "menu-item-boxer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/boxer",
+          "noFollow": false,
+          "tagTitle": "Boxer",
+          "text": "Boxer" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },
+  "menu-item#trunk": {
+    "props": {
+      "id": "menu-item-trunk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/trunk",
+          "noFollow": false,
+          "tagTitle": "Trunk",
+          "text": "Trunk" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },"menu-item#boxertodos": {
+    "props": {
+      "id": "menu-item-boxertodos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa interior",
+          "noFollow": false,
+          "tagTitle": "Ver Todos",
+          "text": "Ver Todos" 
+      },
+      "blockClass":"todos" 
+    }
+  },
+
+  "flex-layout.col#playerascol":{
+    "children":[
+      "vtex.menu@2.x:menu#playerasmenu"      
+    ],"props":{
+      "width":"100%"
+    }
+  }, "vtex.menu@2.x:menu#playerasmenu":{
+    "props":{
+      "orientation":"vertical"
+    },
+    "children":[
+      "menu-item#titplayeras",
+      "menu-item#ptirantes",
+      "menu-item#pmcorta",
+      "menu-item#pmlarga",
+      "menu-item#playeratodos"
+    ]
+  },"menu-item#titplayeras": {
+    "props": {
+      "id": "menu-item-titplayeras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "PLAYERAS",
+      "text": "PLAYERAS",
+      "itemProps": {
+        "type": "internal",
+          "noFollow": false          
+      },
+      "blockClass":"titcol" 
+    }
+  },"menu-item#ptirantes": {
+    "props": {
+      "id": "menu-item-ptirantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/playera de tirantes",
+          "noFollow": false,
+          "tagTitle": "Playera de Tirantes",
+          "text": "Playera de Tirantes" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },"menu-item#pmcorta": {
+    "props": {
+      "id": "menu-item-pmcorta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/playera manga corta",
+          "noFollow": false,
+          "tagTitle": "Playera Manga Corta",
+          "text": "Playera Manga Corta" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },"menu-item#pmlarga": {
+    "props": {
+      "id": "menu-item-pmlarga",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/playera manga larga",
+          "noFollow": false,
+          "tagTitle": "Playera Manga Larga",
+          "text": "Playera Manga Larga" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },"menu-item#playeratodos": {
+    "props": {
+      "id": "menu-item-playeratodos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pijamas",
+          "noFollow": false,
+          "tagTitle": "Ver Todos",
+          "text": "Ver Todos" 
+      },
+      "blockClass":"todos" 
+    }
+  }
+
+
+
+
+
+ 
+  
+}

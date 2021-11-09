@@ -1,0 +1,118 @@
+{
+  "product-summary.shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      //"flex-layout.row#buybtn",
+      //"add-to-cart-button",
+      "product-summary-name",
+      //"product-summary-description",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings"
+      //"product-summary-price"
+      //"product-installments#summary"
+      
+    ]
+  },
+  "flex-layout.row#buybtn":{
+    "children":[
+      "add-to-cart-button"
+    ],"props":{
+      "blockClass":"buybtn"
+    }
+  },
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf",
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "flex-layout.row#wishbtn",
+      "flex-layout.row#buybtn"
+      //"modal-trigger#quickview" // Check quickview.jsonc
+    ]
+  },
+
+  "flex-layout.row#wishbtn":{
+    "children":[
+      "flex-layout.col#wishbtn"
+    ],"props":{
+      "fullWidth": true,
+      "horizontalAlign":"right"
+    }
+  },
+
+  "flex-layout.col#wishbtn":{
+    "children":[
+      "add-to-list-btn"
+    ],"props":{
+      "horizontalAlign":"right"
+    }
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "product-selling-price#summary"//,
+      //"product-price-savings#summary"
+    ]
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": [
+        "discount"
+      ],
+      "blockClass": "summary"
+    }
+  },
+
+  "add-to-cart-button":{
+    "props":{
+      "text":"Añadir a Carrito"
+    }
+  }
+}
+

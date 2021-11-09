@@ -1,0 +1,107 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+.element :global(.vtex-flex-layout-0-x-flexRow--buybtn){
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+@media (max-width:1024px) {
+  .element :global(.vtex-flex-layout-0-x-flexRow--buybtn){
+    opacity: 1;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--colimghome1),
+  :global(.vtex-flex-layout-0-x-flexCol--colimghome2){
+    margin-top: 31px;
+  }
+
+  :global(.vtex-product-summary-2-x-nameWrapper){
+    margin-top: 15px;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--silueta){
+    margin-bottom: 10px !important;
+  }
+
+
+  :global(.vtex-flex-layout-0-x-flexColChild--contsilueta)
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer){
+      margin-bottom: -1.5rem;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--titsilu){
+    height: 240px !important;
+  }
+
+  :global(.vtex-product-summary-2-x-brandName){
+    font-size: 16px !important;
+  }
+
+  :global(.vtex-rich-text-0-x-wrapper--tnw){
+    margin-top: 5px !important;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--txtnw),
+  :global(.vtex-rich-text-0-x-paragraph--tnw){    
+    padding: 0px 0px !important;
+  }
+
+}
+@media(min-width: 1025px){
+  .element:hover :global(.vtex-flex-layout-0-x-flexRow--buybtn){
+    opacity: 1;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--colimghome1){
+    padding-right: 15px;
+    margin-top: 25px;
+  }
+  
+  :global(.vtex-flex-layout-0-x-flexCol--colimghome2){
+    padding-left: 15px;
+    margin-top: 25px;
+  }
+ 
+
+}
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  } 
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colimghome){
+  margin-top: 25px;
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2E2E2E;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}

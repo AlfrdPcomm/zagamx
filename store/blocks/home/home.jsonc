@@ -1,0 +1,565 @@
+{
+  "store.home": {
+    "blocks": [      
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titsil",
+      //"flex-layout.row#silueta",
+      "flex-layout.row#titelas",
+      "flex-layout.row#telas",
+      "flex-layout.row#inv",
+      "flex-layout.row#desc",
+      "flex-layout.row#shelf",
+      "flex-layout.row#trevis",
+      "flex-layout.row#revs",
+      "flex-layout.row#mexico",
+      "flex-layout.row#nl",
+      "back-to-top-button"
+      
+      /*"rich-text#shelf-title",*/
+      /*"flex-layout.row#shelf",*/
+      /*"info-card#home",*/
+      /*"rich-text#question",*/
+      /*"rich-text#link",*/
+      /*"newsletter"*/
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/bannerprin1.png",
+          "mobileImage": "assets/banmob.png"
+        },
+        {
+          "image": "assets/bannerprin1.png",
+          "mobileImage": "assets/banmob.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows":"desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"],
+    "props":{
+    "marginTop":8
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows":"desktopOnly"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  },
+
+
+"flex-layout.row#titsil":{
+  "children":[
+    "flex-layout.col#coltit"
+  ],"props":{
+    "blockClass":"titsilu",
+    "horizontalAlign":"center",
+    "paddingTop":5,
+    "paddingBottom":5
+  }
+},"flex-layout.col#coltit":{
+  "children":[
+    "rich-text#titulosilueta",
+    "list-context.image-list#silueta"
+  ],"props":{
+    "horizontalAlign": "center",
+    "blockClass":"contsilueta",
+    "width":"100%"
+  }
+},"rich-text#titulosilueta":{
+  "props":{
+    "text": "Tu Silueta Favorita",
+    "font": "t-heading-4 ",
+    "textPosition":"CENTER",
+    "blockClass":"silueta"
+  }
+},
+ 
+
+"flex-layout.row#silueta":{
+  "children":[   
+    "list-context.image-list#silueta"
+  ],"props":{
+    "blockClass":"silueta",
+    "horizontalAlign":"center"
+  }
+},"list-context.image-list#silueta": {
+  "children": [
+    "slider-layout#siluetas"],
+  "props": {
+    "height":250,
+    "images": [
+      {
+        "image": "assets/underwear-zaga1.png",
+        "mobileImage":"assets/underwear-zaga1.png",
+        "description": "something something",
+        "link":{
+          "url":"/"
+        },
+        "width":"50%"
+      },
+      {
+        "image": "assets/underwear-zaga2.png",
+        "mobileImage":"assets/underwear-zaga2.png",
+        "description": "something something",
+        "link":{
+          "url":"/"
+        },
+        "width":"50%"
+      },
+      {
+        "image": "assets/underwear-zaga3.png",
+        "mobileImage":"assets/underwear-zaga3.png",
+        "description": "something something",
+        "link":{
+          "url":"/"
+        },
+        "width":"50%"
+      }
+    ]
+    
+    
+  }
+},"slider-layout#siluetas": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 6,
+      "tablet": 3,
+      "phone":1
+    },
+    "infinite": true,
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows":"desktopOnly"
+  }
+},
+
+"flex-layout.row#titelas":{
+  "children":[
+    "flex-layout.col#coltelas"
+  ],"props":{
+    "horizontalAlign":"center",
+    "marginTop":5,
+    "marginBottom": 5
+  }
+},"flex-layout.col#coltelas":{
+  "children":[
+    "rich-text#tit"
+  ],"props":{
+    "horizontalAlign":"center"
+  }
+},"rich-text#tit":{
+  "props":{
+    "text": "Te queda bien, te luce bien",
+    "font": "t-heading-4 ",
+    "blockClass":"tequeda"
+  }
+},
+
+"flex-layout.row#telas":{
+  "children":[   
+    "list-context.image-list#tela"
+  ],"props":{
+    "horizontalAlign":"center"
+  }
+},"list-context.image-list#tela": {
+  "children": [
+    "slider-layout#tel"],
+  "props": {
+    "blockClass":"cartelas",
+    "height": 449,
+    "images": [
+      {
+        "image": "assets/ZAGA_SET4_0052.png",
+        "mobileImage":"assets/ZAGA_SET4_0052.png",
+        "description": "something something",
+        "link":{
+          "url":"/"
+        },
+        "width":"auto"
+      },
+      {
+        "image": "assets/ZAGA_SET5_00145.png",
+        "mobileImage":"assets/ZAGA_SET4_0052.png",
+        "description": "something something",
+        "link":{
+          "url":"/"
+        },
+        "width":"auto"
+      },
+      {
+        "image": "assets/ZAGA_SET7_0080.png",
+        "mobileImage":"assets/ZAGA_SET4_0052.png",
+        "description": "something something",
+        "link":{
+          "url":"/"
+        },
+        "width":"auto"
+      }
+      
+    ]
+    
+    
+  }
+},"slider-layout#tel": {
+  "props": {
+    "blockClass":"cartelas",
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 1
+    },
+    "infinite": true,
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows":"desktopOnly"
+  }
+},
+
+"flex-layout.row#inv":{
+  "children":[
+    "flex-layout.col#txtinv"
+  ],"props":{
+    "horizontalAlign":"center",
+    "marginTop":8
+  }
+},"flex-layout.col#txtinv":{
+  "children":[
+    "list-context.image-list#comodidad"
+  ],"props":{
+    "horizontalAlign":"center"
+  }
+},"list-context.image-list#comodidad":{
+  "children":[
+    "slider-layout#comodidad"
+  ],
+  "props":{
+    "height":"359",
+    "images":[
+      {
+        "image":"assets/banner2.png",
+        "mobileImage  ":"assets/banner2mob.png"
+      }      
+    ]
+  }
+},"slider-layout#comodidad": {
+  "props": {
+    "blockClass":"comodidad",
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows":"never"
+  }
+},"image#suave":{
+  "props":{
+    "src":"assets/banner2.png"
+  }
+},
+
+"flex-layout.row#desc":{
+  "children":[
+    "flex-layout.col#col1",
+    "flex-layout.col#col2"
+  ],"props":{
+    "blockClass":"rowdesc",
+    "horizontalAlign":"center"
+  }
+},"flex-layout.col#col1":{
+  "children":[
+    "image#col1"
+  ],"props":{
+    "horizontalAlign": "center",
+    "blockClass":"colimghome1"
+  }
+},"image#col1":{
+  "props":{
+    "src":"assets/ZAGA_SET1_0052.png",
+    "link":"/",
+    "blockClass":"imghome"
+  }
+},"flex-layout.col#col2":{
+  "children":[
+    "image#col2"
+  ],"props":{
+    "horizontalAlign": "center",
+    "blockClass":"colimghome2"
+  }
+},"image#col2":{
+  "props":{
+    "src":"assets/ZAGA_SET1_0043.png",
+    "link":"/",
+    "blockClass":"imghome"   
+  }  
+}, 
+
+
+"flex-layout.row#trevis":{
+  "children":[
+    "rich-text#revis"
+  ] 
+},"rich-text#revis":{
+  "props":{
+    "text": "Con ZAGA siéntete confiado, siéntete acompañado",
+    "font": "t-heading-4",
+    "textPosition": "CENTER",
+    "blockClass":"nuestrosclientes"
+  }
+},
+
+"flex-layout.row#revs":{
+  "children":[   
+    "list-context.image-list#reviews"
+  ],"props":{
+    "blockClass":"revi",
+    "horizontalAlign":"center"
+  }
+},
+"list-context.image-list#reviews": {
+  "children": [
+    "slider-layout#rev"],
+  "props": {
+        "height": 650,
+    "images": [
+      {
+        "image": "assets/reviewgray.png",
+        "mobileImage":"assets/reviewgray.png",
+        "description": "something something"
+      },
+      {
+        "image": "assets/reviewgray.png",
+        "mobileImage":"assets/reviewgray.png",
+        "description": "something something"
+      },
+      {
+        "image": "assets/reviewgray.png",
+        "mobileImage":"assets/reviewgray.png",
+        "description": "something something"
+      },
+      {
+        "image":"assets/reviewgray.png",
+        "mobileImage":"assets/reviewgray.png",
+        "description": "something something"
+      },
+      {
+        "image": "assets/reviewgray.png",
+        "mobileImage":"assets/reviewgray.png",
+        "description": "something something"
+      },
+      {
+        "image": "assets/reviewgray.png",
+        "mobileImage":"assets/reviewgray.png",
+        "description": "something something"
+      }
+    ]
+    
+    
+  }
+},"slider-layout#rev": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 5,
+      "tablet": 3,
+      "phone": 1
+    },
+    "infinite": true,
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows":"desktopOnly"
+  }
+},
+"flex-layout.row#mexico":{
+  "children":[
+    "flex-layout.col#contmx"
+  ],"props":{
+    "blockClass":"contenmx",
+    "horizontalAlign":"center"
+  }
+},"flex-layout.col#contmx":{
+  "children":[
+    "list-context.image-list#mexico"
+  ],"props":{
+    "horizontalAlign":"center"
+  }
+},"list-context.image-list#mexico":{
+  "children":[
+    "slider-layout#mex"
+  ],"props":{
+    "height":"359",
+    "images":[
+      {
+        "image":"https://zagamx.myvtex.com/arquivos/fmexico.png",
+        "mobileImage":"assets/fmexicomob.png"
+      }
+    ]
+  }
+},"slider-layout#mex":{
+  "props":{
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows":"never"
+  }
+},"image#ttmx":{
+  "props":{
+    "src":"https://zagamx.myvtex.com/arquivos/fmexico.png"
+  }
+},
+
+"flex-layout.row#nl":{
+  "children":[
+    "flex-layout.col#nwcontext",
+    "flex-layout.col#news"
+  ],"props":{
+    "blockClass":"rncontent",
+    "horizontalAlign":"center"
+  }
+},"flex-layout.col#nwcontext":{
+  "children":[
+    "rich-text#nwtit",
+    "rich-text#nwcont"
+  ],"props":{
+    "horizontalAlign": "center"
+  }
+},"rich-text#nwtit":{
+  "props":{
+    "text": "¡Recibe Nuestras Noticias!",
+    "font": "t-heading-2",
+    "textPosition ": "center",
+    "blockClass":"tnw"
+  }    
+},"rich-text#nwcont":{
+  "props":{
+    "text":"Registra tu correo eletrónico y recibe noticias sobre porductos, ofertas y descuentos.",
+    "font":"t-heading-4 ",
+    "blockClass":"txtnw"
+  }
+},
+"flex-layout.col#news":{
+  "children":[
+    "newsletter-form"
+  ],"props":{
+    "horizontalAlign": "center",
+    "verticalAlign":"middle",
+    "blockClass":"colform"
+  }
+},"newsletter-form":{
+  "children":[
+    "newsletter-input-email",
+    "newsletter-submit"
+  ],"props":{
+    "blockClass": "rownwform"
+  }
+},"newsletter-submit":{
+  "props":{
+    "submitButtonLabel": "Suscribirme",
+    "width": "grow",
+    "blockClass": "nwbutton",
+    "fullWidth":true
+  }
+},
+
+"shelf#product":{
+  "blocks":[
+    "product-summary.shelf"
+  ], "props":{
+    "blockClass":"shelfGustar",
+    "orderBy": "OrderByTopSaleDESC",
+    "horizontalAlign":"center",
+    "productList":{
+      "maxItems": 10,
+      "itemsPerPage": 5,
+      "miniItemsPerPage": 2,
+      "scroll": "BY_ITEM",
+      "arrows": false,
+      "titleText": "Te Podría Gustar..."      
+    }
+  }
+},
+
+"back-to-top-button":{
+  "props":{
+    "display":"caret-icon"
+  }
+}
+
+
+
+
+
+}

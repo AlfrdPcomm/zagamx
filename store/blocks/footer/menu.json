@@ -1,0 +1,663 @@
+{ 
+  "vtex.menu@2.x:menu#footer-social":{
+    "props":{
+      "orientation": "vertical"
+    },
+    "children":[
+      "menu-item#social",
+      "menu-item#iconos"
+    ]
+  },"menu-item#social":{
+    "props":{
+      "id": "menu-item-social",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Conoce Más de Nosotros",
+        "text": "Conoce Más de Nosotros",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false
+        
+      },
+      "blockClass":"titfoo"
+    }
+  },
+
+  "menu-item#iconos":{
+    "props":{
+      "id": "menu-item-iconos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+     
+      "blockClass":"foomenu"
+    },"children":[
+      "slider-layout#social"
+    ]
+  },
+  
+  
+  
+  "slider-layout#social": {
+    "props": {
+      "blockClass":"sepsli",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 4
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    },
+    "children": ["image#1", "image#2", "image#3","image#4"]
+  },
+  
+  "image#1": {
+    "props": {
+      "src": "https://zagamx.myvtex.com/arquivos/facebook.png",
+      "link":{
+        "url": "https://www.facebook.com/Zaga-Underwear-363132323723806",
+        "openNewTab": true
+      }    
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "https://zagamx.myvtex.com/arquivos/youtube.png",
+      "link":{
+        "url": "",
+        "openNewTab": true
+      }    
+    }
+  },
+  "image#3": {
+    "props": {
+      "src": "https://zagamx.myvtex.com/arquivos/instagram.png",
+      "link":{
+        "url": "#",
+        "openNewTab": true
+      }    
+    }
+  },"image#4": {
+    "props": {
+      "src": "https://zagamx.myvtex.com/arquivos/twitter.png",
+      "link":{
+        "url": "#",
+        "openNewTab": true
+      }    
+    }
+  },
+  
+  "vtex.menu@2.x:menu#footer-envios": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#enviosydev",
+      "menu-item#env1",
+      "menu-item#env2"
+    ]
+  },
+  "menu-item#enviosydev": {
+    "props": {
+      "id": "menu-item-enviosydev",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,"tagTitle": "Envíos y Devoluciones",
+      "text": "Envíos y Devoluciones",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false       
+      },
+      "blockClass":"titfoo"
+    }
+  },
+
+  "menu-item#env1": {
+    "props": {
+      "id": "menu-item-env1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Envíos y Devoluciones1",
+        "text": "Envíos y Devoluciones1"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#env2": {
+    "props": {
+      "id": "menu-item-env2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Envíos y Devoluciones2",
+        "text": "Envíos y Devoluciones2"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+  
+
+
+
+
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#atencion",
+      "menu-item#calle",
+      "menu-item#colonia",
+      "menu-item#codigopost",
+      "menu-item#tel",
+      "menu-item#email"
+
+    ]
+  },
+  "menu-item#atencion": {
+    "props": {
+      "id": "menu-item-atencion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Atención a Cleintes",
+      "text": "Atención a Clientes",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false       
+      },
+      "blockClass":"titfoo"
+    }
+  },
+  "menu-item#calle": {
+    "props": {
+      "id": "menu-item-calle",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Av. López Mateos Sur",
+        "text": "Av. López Mateos Sur"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+  "menu-item#colonia": {
+    "props": {
+      "id": "menu-item-col",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Col. Chapalita, Guadalajara",
+        "text": "Col. Chapalita, Guadalajara"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+  "menu-item#codigopost": {
+    "props": {
+      "id": "menu-item-codigopost",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Jalisco, CP 43433",
+        "text": "Jalisco, CP 43433"
+      },
+      "blockClass":"foomenu"
+    }
+  },"menu-item#tel": {
+    "props": {
+      "id": "menu-item-tel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "00 0000 0000",
+        "text": "00 0000 0000"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#email": {
+    "props": {
+      "id": "menu-item-email",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "atencioncliente@zaga.com",
+        "text": "atencioncliente@zaga.com"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#privacidad",
+      "menu-item#politicas",
+      "menu-item#politicas1",
+      "menu-item#politicas2"
+    ]
+  },
+
+  "menu-item#privacidad": {
+    "props": {
+      "id": "menu-item-privacidad",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,"tagTitle": "Privacidad",
+      "text": "Privacidad",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true
+        
+      },
+      "blockClass":"titfoo"
+    }
+  },
+
+  "menu-item#politicas": {
+    "props": {
+      "id": "menu-item-politicas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Políticas de Privacidad",
+        "text": "Políticas de Privacidad"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#politicas1": {
+    "props": {
+      "id": "menu-item-politicas1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Políticas de Privacidad1",
+        "text": "Políticas de Privacidad1"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#politicas2": {
+    "props": {
+      "id": "menu-item-politicas2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Políticas de Privacidad2",
+        "text": "Políticas de Privacidad2"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#faqs",
+      "menu-item#pedido",
+      "menu-item#pedido1",
+      "menu-item#pedido2"
+    ]
+  },
+
+  "menu-item#faqs": {
+    "props": {
+      "id": "menu-item-faqs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "FAQ",
+        "text": "FAQ",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true        
+      },
+      "blockClass":"titfoo"
+    }
+  },
+
+  "menu-item#pedido": {
+    "props": {
+      "id": "menu-item-pedido",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "¿Cuando Llega mi pedido?",
+        "text": "¿Cuando Llega mi pedido?"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#pedido1": {
+    "props": {
+      "id": "menu-item-pedido1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "¿Cuando Llega mi pedido?1",
+        "text": "¿Cuando Llega mi pedido?1"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#pedido2": {
+    "props": {
+      "id": "menu-item-pedido2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "¿Cuando Llega mi pedido?2",
+        "text": "¿Cuando Llega mi pedido?2"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#empresa",
+      "menu-item#blog",
+      "menu-item#blog1",
+      "menu-item#blog2"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#atencion-mobile",
+      "menu-item#empresa-mobile",
+      "menu-item#privacidad-mobile",
+      "menu-item#faq-mobile",
+      "menu-item#env-mobile"
+    ]
+  },
+
+  "menu-item#atencion-mobile": {
+    "props": {
+      "id": "menu-item-category-atencionm",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Atención a Clientes",
+        "text": "Atención a Clientes",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true        
+      },
+      "blockClass":"titfoo"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#atencionm"]
+  },
+  "vtex.menu@2.x:submenu.accordion#atencionm": {
+    "children": ["vtex.menu@2.x:menu#atencion-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#atencion-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calle",
+      "menu-item#colonia",
+      "menu-item#codigopost",
+      "menu-item#tel",
+      "menu-item#email"
+    ]
+  },
+
+  "menu-item#empresa-mobile": {
+    "props": {
+      "id": "menu-item-category-empresam",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Empresa",
+        "text": "Empresa",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true
+        
+      },
+      "blockClass":"titfoo"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#empresam"]
+  },
+  "vtex.menu@2.x:submenu.accordion#empresam": {
+    "children": ["vtex.menu@2.x:menu#empresam-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#empresam-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#blog",
+      "menu-item#blog1",
+      "menu-item#blog2"
+    ]
+  },
+
+  "menu-item#privacidad-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Privacidad",
+        "text": "Privacidad"
+      },
+      "blockClass":"titfoo"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#privacidadm"]
+  },
+  "vtex.menu@2.x:submenu.accordion#privacidadm": {
+    "children": ["vtex.menu@2.x:menu#footer-privacidad-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-privacidad-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#politicas",
+      "menu-item#politicas1",
+      "menu-item#politicas2"
+    ]
+  },
+
+  "menu-item#env-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Envios y Devoluciones",
+        "text": "Envios y Devoluciones"
+      },
+      "blockClass":"titfoo"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#envm"]
+  },
+  "vtex.menu@2.x:submenu.accordion#envm": {
+    "children": ["vtex.menu@2.x:menu#footer-env-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-env-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#env1",
+      "menu-item#env2"
+    ]
+  },
+
+  "menu-item#faq-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Preguntas Frecuentes",
+        "text": "Preguntas Frecuentes"
+      },
+      "blockClass":"titfoo"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#faqm"]
+  },
+  "vtex.menu@2.x:submenu.accordion#faqm": {
+    "children": ["vtex.menu@2.x:menu#footer-faq-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-faq-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#pedido",
+      "menu-item#pedido1",
+      "menu-item#pedido2"
+    ]
+  },
+
+
+  "menu-item#empresa": {
+    "props": {
+      "id": "menu-item-category-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Empresa",
+        "text": "Empresa",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true
+        
+      },
+      "blockClass":"titfoo"
+    }
+  },
+
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#blog1": {
+    "props": {
+      "id": "menu-item-blog1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog1",
+        "text": "Blog1"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+
+  "menu-item#blog2": {
+    "props": {
+      "id": "menu-item-blog2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog2",
+        "text": "Blog2"
+      },
+      "blockClass":"foomenu"
+    }
+  }
+
+}
