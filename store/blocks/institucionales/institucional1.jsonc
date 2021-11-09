@@ -1,0 +1,39 @@
+{
+    "store.custom#institucional1": {
+        "children":[
+            "flex-layout.row#titinst",
+            "flex-layout.row#continst"
+        ]
+      },
+      "flex-layout.row#titinst":{
+          "title":"Row Title",
+          "children":[
+              "rich-text#titulo"
+          ]
+      },
+      "rich-text#titulo":{
+          "title":"Text Title",
+          "props":{
+              "text":"Títuto institucional",
+              "blockClass":"titinst"
+          }
+      },
+      "flex-layout.row#continst":{
+          "title":"Row Content",
+          "children":[
+              "flex-layout.col#continst"
+          ]
+      },"flex-layout.col#continst":{
+          "title":"Col Content",
+          "children":[
+              "rich-text#txtinst"
+          ]
+      },"rich-text#txtinst":{
+          "title":"Text Content",
+          "props":{
+              "blockClass":"txtinst",
+              "text":"### Texto1 \n ** Texto 2 **  \n Texto 3"
+          }
+      }
+      
+}
