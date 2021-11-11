@@ -1,6 +1,8 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"]
   },
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
@@ -181,10 +183,13 @@
     },"children":[
       "flex-layout.row#titslide",
       "flex-layout.row#slidermenu",
-      //"menu-item#ropa-interior",
-      "menu-item#pijamas",
-      "menu-item#fijate",
-      "menu-item#login"
+      "menu-item#ropa-interior",
+      "menu-item#oferta",
+      "menu-item#nosotros",
+      "menu-item#contacto"
+      //"menu-item#pijamas",
+      //"menu-item#fijate",
+      //"menu-item#login"
     ]
   },"flex-layout.row#titslide":{
     "children":[
@@ -228,9 +233,96 @@
       "orientation": "vertical"
     },
     "children": [
-      "flex-layout.row#slidermenu"      
+      //"flex-layout.row#slidermenu"
+      "menu-item#boxerscol",
+      "menu-item#boxerLargo",
+      "menu-item#boxerCorto",
+      "menu-item#brief",
+      "menu-item#boxertodos"    
     ]
-  },"flex-layout.row#slidermenu":{
+  },
+
+  "menu-item#boxerscol": {
+    "props": {
+      "id": "menu-item-boxercol",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "BOXERS",
+      "text": "BOXERS",
+      "itemProps": {
+        "type": "internal",
+          "noFollow": false 
+      },
+      "blockClass":"titcol" 
+    }
+  },"menu-item#boxerLargo": {
+    "props": {
+      "id": "menu-item-boxerLargo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/boxer largo",
+          "noFollow": false,
+          "tagTitle": "Boxer Largo",
+          "text": "Boxer Largo" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },
+  "menu-item#boxerCorto": {
+    "props": {
+      "id": "menu-item-boxerCorto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/boxer corto",
+          "noFollow": false,
+          "tagTitle": "Boxer Corto",
+          "text": "Boxer Corto" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },
+  "menu-item#brief": {
+    "props": {
+      "id": "menu-item-brief",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brief",
+          "noFollow": false,
+          "tagTitle": "Brief",
+          "text": "Brief" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },
+  "menu-item#boxertodos": {
+    "props": {
+      "id": "menu-item-boxertodos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa interior",
+          "noFollow": false,
+          "tagTitle": "Ver Todos",
+          "text": "Ver Todos" 
+      },
+      "blockClass":"todos" 
+    }
+  },
+
+  
+"flex-layout.row#slidermenu":{
     "children":[
       "list-context.image-list#slideprincipal"
     ]
@@ -273,7 +365,8 @@
         }
       ]
     }
-  }, "slider-layout#menusiluetas":{
+  }, 
+  "slider-layout#menusiluetas":{
     "props": {
       "itemsPerPage": {
         "desktop": 0,
@@ -284,8 +377,64 @@
         "showPaginationDots": "desktopOnly"
     }
   },
+  "menu-item#oferta": {
+    "props": {
+      "id": "item-oferta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Oferta",
+        "text": "Oferta",
+      "itemProps": {
+        "type": "internal",
+        "href":"/oferta",
+        "noFollow": true        
+      },
+      "blockClass":"prinmenu"
+    },
+    "blocks": [
+    
+    ]
+  },
+  "menu-item#nosotros": {
+    "props": {
+      "id": "item-nosotros",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Nosotros",
+        "text": "Nosotros",
+      "itemProps": {
+        "type": "internal",
+        "href":"/nosostros",
+        "noFollow": true        
+      },
+      "blockClass":"prinmenu"
+    },
+    "blocks": [
   
-  
+    ]
+  },
+  "menu-item#contacto": {
+    "props": {
+      "id": "item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "tagTitle": "Contacto",
+        "text": "Contacto",
+      "itemProps": {
+        "type": "internal",
+        "href":"/contacto",
+        "noFollow": true        
+      },
+      "blockClass":"prinmenu"
+    },
+    "blocks": [
+      
+    ]
+  },
+  /*
   "menu-item#pijamas": {
     "props": {
       "id": "item-pijamas",
@@ -382,7 +531,7 @@
     }
   },
 
-
+*/
   "logo#mobile": {
     "props": {
       "title": "Logo",
