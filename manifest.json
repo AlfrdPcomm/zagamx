@@ -63,7 +63,8 @@
     "vtex.tab-layout": "0.x",
     "vtex.responsive-layout": "0.x",
     "vtex.store-newsletter": "1.x",
-    "vtex.search": "2.x"
+    "vtex.search": "2.x",
+    "zagamx.guidesize-app": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",

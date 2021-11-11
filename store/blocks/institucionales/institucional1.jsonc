@@ -14,7 +14,7 @@
       "rich-text#titulo":{
           "title":"Text Title",
           "props":{
-              "text":"Títuto institucional",
+              "text":"# Títuto institucional",
               "blockClass":"titinst"
           }
       },
@@ -32,7 +32,7 @@
           "title":"Text Content",
           "props":{
               "blockClass":"txtinst",
-              "text":"### Texto1 \n ** Texto 2 **  \n Texto 3"
+              "text":"### Texto1 \n  **Texto2** \n texto3"
           }
       }
       

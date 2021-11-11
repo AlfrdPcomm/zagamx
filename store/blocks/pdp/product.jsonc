@@ -255,7 +255,7 @@
       "orientation": "vertical"
     },
     "children": [
-      "product-assembly-options"
+      "documentation"
     ]
   },"menu-item#caracteristicas": {
     "props": {
