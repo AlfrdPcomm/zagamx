@@ -726,3 +726,39 @@
 :global(.vtex-store-components-3-x-imageElementLink){
   text-align: center;
 }
+
+/* CSS institucional" */
+:global(.vtex-rich-text-0-x-container--titinst ){
+  border-bottom: 2px solid red;
+}
+:global(.vtex-rich-text-0-x-container--txtinst){
+  text-align: justify;
+}
+
+/* Media Query */
+@media only screen and (max-width: 599px) {
+  :global(.vtex-rich-text-0-x-container--txtinst), 
+  :global(.vtex-rich-text-0-x-wrapper--titinst){
+    margin: 0 6%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :global(.vtex-rich-text-0-x-container--txtinst), 
+  :global(.vtex-rich-text-0-x-wrapper--titinst){
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  :global(.vtex-rich-text-0-x-container--txtinst), 
+  :global(.vtex-rich-text-0-x-wrapper--titinst){
+    margin: 0 12%;
+  }
+}
+
+@media only screen and (min-width: 1026px) {
+  :global(.vtex-rich-text-0-x-container--txtinst), 
+  :global(.vtex-rich-text-0-x-wrapper--titinst){
+    margin: 0 10%;
+  }
+}
