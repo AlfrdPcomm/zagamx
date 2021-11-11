@@ -161,11 +161,9 @@
     },
     "children": [
       "menu-item#atencion",
-      "menu-item#calle",
-      "menu-item#colonia",
-      "menu-item#codigopost",
       "menu-item#tel",
-      "menu-item#email"
+      "menu-item#email",
+      "menu-item#horario"
 
     ]
   },
@@ -238,10 +236,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "tel:0000000000",
+        "href": "Tel: 5578587220",
         "noFollow": false,
-        "tagTitle": "00 0000 0000",
-        "text": "00 0000 0000"
+        "tagTitle": "55 78 58 72 20",
+        "text": "55 78 58 72 20"
       },
       "blockClass":"foomenu"
     }
@@ -255,10 +253,27 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
+        "href": "mailto: ecommerce@grupozaga.com",
+        "noFollow": false,
+        "tagTitle": "ecommerce@grupozaga.com",
+        "text": "ecommerce@grupozaga.com"
+      },
+      "blockClass":"foomenu"
+    }
+  },
+  
+  "menu-item#horario": {
+    "props": {
+      "id": "menu-item-horario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "atencioncliente@zaga.com",
-        "text": "atencioncliente@zaga.com"
+        "tagTitle": "L D 10-6",
+        "text": "L-D 10am - 6pm"
       },
       "blockClass":"foomenu"
     }

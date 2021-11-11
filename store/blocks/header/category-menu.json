@@ -6,7 +6,9 @@
     },
     "children": [
       "menu-item#more",
-      "menu-item#category-home"      
+      "menu-item#more1",
+      "menu-item#more2",
+      "menu-item#more3"     
     ]
   },
   "menu-item#category-apparel": {
@@ -91,8 +93,6 @@
       }
     }
   },
-
-  
   "menu-item#category-home": {
     "props": {
       "id": "menu-item-category-home",
@@ -127,6 +127,61 @@
       "vtex.menu@2.x:submenu#more"
     ]
   },
+
+  "menu-item#more1": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas",
+        "noFollow": true,
+        "tagTitle": "OFERTAS",
+        "text": "OFERTAS"
+      },
+      "blockClass": "topmenu"
+    },
+    "blocks": [
+    ]
+  },
+
+  "menu-item#more2": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nosotros",
+        "noFollow": true,
+        "tagTitle": "NOSOTROS",
+        "text": "NOSOTROS"
+      },
+      "blockClass": "topmenu"
+    },
+    "blocks": [
+    ]
+  },
+
+  "menu-item#more3": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contacto",
+        "noFollow": true,
+        "tagTitle": "CONTACTO",
+        "text": "CONTACTO"
+      },
+      "blockClass": "topmenu"
+    },
+    "blocks": [
+    ]
+  },
+
   "vtex.menu@2.x:submenu#more": {
     "props": {
       "width": "auto"
@@ -137,8 +192,7 @@
   },
   "flex-layout.row#menu-more": {
     "children": [
-      "flex-layout.col#boxerscol",
-      "flex-layout.col#playerascol"
+      "flex-layout.col#boxerscol"
     ]
   },"flex-layout.col#boxerscol":{
     "children":[
@@ -151,8 +205,9 @@
       "orientation":"vertical"
     },"children":[
       "menu-item#boxerscol",
-      "menu-item#boxer",
-      "menu-item#trunk",
+      "menu-item#boxerLargo",
+      "menu-item#boxerCorto",
+      "menu-item#brief",
       "menu-item#boxertodos"
     ]
   },
@@ -170,38 +225,55 @@
       },
       "blockClass":"titcol" 
     }
-  },"menu-item#boxer": {
+  },"menu-item#boxerLargo": {
     "props": {
-      "id": "menu-item-boxer",
+      "id": "menu-item-boxerLargo",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/boxer",
+        "href": "/boxer largo",
           "noFollow": false,
-          "tagTitle": "Boxer",
-          "text": "Boxer" 
+          "tagTitle": "Boxer Largo",
+          "text": "Boxer Largo" 
       },
       "blockClass":"topmenu" 
     }
   },
-  "menu-item#trunk": {
+  "menu-item#boxerCorto": {
     "props": {
-      "id": "menu-item-trunk",
+      "id": "menu-item-boxerCorto",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/trunk",
+        "href": "/boxer corto",
           "noFollow": false,
-          "tagTitle": "Trunk",
-          "text": "Trunk" 
+          "tagTitle": "Boxer Corto",
+          "text": "Boxer Corto" 
       },
       "blockClass":"topmenu" 
     }
-  },"menu-item#boxertodos": {
+  },
+  "menu-item#brief": {
+    "props": {
+      "id": "menu-item-brief",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brief",
+          "noFollow": false,
+          "tagTitle": "Brief",
+          "text": "Brief" 
+      },
+      "blockClass":"topmenu" 
+    }
+  },
+  "menu-item#boxertodos": {
     "props": {
       "id": "menu-item-boxertodos",
       "type": "custom",
