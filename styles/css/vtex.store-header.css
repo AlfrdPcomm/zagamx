@@ -252,6 +252,7 @@
 :global(.vtex-rich-text-0-x-paragraph--prinmenu){
   padding-left: 24px;
   font-weight: 700;
+  font-size: 20px;
 }
 
 :global(.vtex-rich-text-0-x-headingLevel3--notifbar){

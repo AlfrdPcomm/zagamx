@@ -270,7 +270,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "",
         "noFollow": false,
         "tagTitle": "L D 10-6",
         "text": "L-D 10am - 6pm"
@@ -286,8 +286,7 @@
     "children": [
       "menu-item#privacidad",
       "menu-item#politicas",
-      "menu-item#politicas1",
-      "menu-item#politicas2"
+      "menu-item#politicas1"
     ]
   },
 
@@ -316,10 +315,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "aviso-de-privadicad",
         "noFollow": true,
-        "tagTitle": "Políticas de Privacidad",
-        "text": "Políticas de Privacidad"
+        "tagTitle": "Aviso de Privacidad",
+        "text": "Aviso de Privacidad"
       },
       "blockClass":"foomenu"
     }
@@ -333,10 +332,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "terminos-y-condiciones",
         "noFollow": true,
-        "tagTitle": "Políticas de Privacidad1",
-        "text": "Políticas de Privacidad1"
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
       },
       "blockClass":"foomenu"
     }
@@ -378,8 +377,8 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "tagTitle": "FAQ",
-        "text": "FAQ",
+      "tagTitle": "FAQ´S",
+        "text": "FAQ´S",
       "itemProps": {
         "type": "internal",
         "href": "#",
@@ -397,7 +396,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "preguntas-frecuentes",
         "noFollow": true,
         "tagTitle": "¿Cuando Llega mi pedido?",
         "text": "¿Cuando Llega mi pedido?"
@@ -414,7 +413,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "preguntas-frecuentes",
         "noFollow": true,
         "tagTitle": "¿Cuando Llega mi pedido?1",
         "text": "¿Cuando Llega mi pedido?1"
@@ -431,7 +430,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "preguntas-frecuentes",
         "noFollow": true,
         "tagTitle": "¿Cuando Llega mi pedido?2",
         "text": "¿Cuando Llega mi pedido?2"
@@ -447,9 +446,7 @@
     },
     "children": [
       "menu-item#empresa",
-      "menu-item#blog",
-      "menu-item#blog1",
-      "menu-item#blog2"
+      "menu-item#blog"
     ]
   },
 
@@ -461,8 +458,7 @@
       "menu-item#atencion-mobile",
       "menu-item#empresa-mobile",
       "menu-item#privacidad-mobile",
-      "menu-item#faq-mobile",
-      "menu-item#env-mobile"
+      "menu-item#faq-mobile"
     ]
   },
 
@@ -491,11 +487,9 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#calle",
-      "menu-item#colonia",
-      "menu-item#codigopost",
       "menu-item#tel",
-      "menu-item#email"
+      "menu-item#email",
+      "menu-item#horario"
     ]
   },
 
@@ -525,9 +519,7 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#blog",
-      "menu-item#blog1",
-      "menu-item#blog2"
+      "menu-item#blog"
     ]
   },
 
@@ -551,8 +543,7 @@
     },
     "children": [
       "menu-item#politicas",
-      "menu-item#politicas1",
-      "menu-item#politicas2"
+      "menu-item#politicas1"
     ]
   },
 
@@ -632,10 +623,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/quienes-somos",
         "noFollow": false,
-        "tagTitle": "Blog",
-        "text": "Blog"
+        "tagTitle": "¿Quienes Somos?",
+        "text": "¿Quienes Somos?"
       },
       "blockClass":"foomenu"
     }

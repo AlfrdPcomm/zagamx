@@ -762,3 +762,7 @@
     margin: 0 10%;
   }
 }
+
+:global(.vtex-search-result-3-x-galleryItem--small){
+  padding: 0%;
+}

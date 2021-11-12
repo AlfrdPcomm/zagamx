@@ -183,13 +183,13 @@
     },"children":[
       "flex-layout.row#titslide",
       "flex-layout.row#slidermenu",
-      "menu-item#ropa-interior",
+      //"menu-item#ropa-interior",
       "menu-item#oferta",
       "menu-item#nosotros",
-      "menu-item#contacto"
+      "menu-item#contacto",
       //"menu-item#pijamas",
       //"menu-item#fijate",
-      //"menu-item#login"
+      "menu-item#login"
     ]
   },"flex-layout.row#titslide":{
     "children":[
@@ -333,34 +333,27 @@
       "slider-layout#menusiluetas"
     ],
     "props":{
-      "height": 650,
+      "height": 125,
       "images":[
         {
-          "image": "https://zagamx.myvtex.com/arquivos/silueta1.png",
-          "mobileImage":"https://zagamx.myvtex.com/arquivos/silueta1.png",
+          "image": "assets/underwear-zaga1.png",
+          "mobileImage":"assets/underwear-zaga1.png",
           "link": {
-            "url" : "/boxer"
+            "url" : "/boxer-corto"
           }
         },
         {
-          "image": "https://zagamx.myvtex.com/arquivos/silueta2.png",
-          "mobileImage":"https://zagamx.myvtex.com/arquivos/silueta2.png",
+          "image": "assets/underwear-zaga2.png",
+          "mobileImage":"assets/underwear-zaga2.png",
           "link": {
-            "url" : "/trusa"
+            "url" : "/brief"
           }
         },
         {
-          "image": "https://zagamx.myvtex.com/arquivos/silueta3.png",
-          "mobileImage":"https://zagamx.myvtex.com/arquivos/silueta3.png",
+          "image": "assets/underwear-zaga3.png",
+          "mobileImage":"assets/underwear-zaga3.png",
           "link": {
-            "url" : "/cuellov"
-          }
-        },
-        {
-          "image": "https://zagamx.myvtex.com/arquivos/silueta4.png",
-          "mobileImage":"https://zagamx.myvtex.com/arquivos/silueta4.png",
-          "link": {
-            "url" : "/playera"
+            "url" : "/boxer-largo"
           }
         }
       ]
@@ -374,7 +367,8 @@
         "phone": 2
       },
       "infinite": true,
-        "showPaginationDots": "desktopOnly"
+        "showPaginationDots": "mobileOnly",
+        "showNavigationArrows":"never"
     }
   },
   "menu-item#oferta": {
@@ -498,40 +492,60 @@
   },
 
 
-  "menu-item#login": {
-    "props": {
-      "id": "item-fijate",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "tagTitle": "Mi cuenta",
-        "text": "Mi cuenta  ",
-      "itemProps": {
-        "type": "internal",
-        "href":"/login",
-        "noFollow": true        
-      },
-      "blockClass":"prinmenu"
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#login"]
-  },
-  "vtex.menu@2.x:submenu.accordion#login": {
-    "children": ["vtex.menu@2.x:menu#login"]
-  },"vtex.menu@2.x:menu#login": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass":"submenu"
-    },
-    "children": [
-      "rich-text#login"
-    ]
-  },"rich-text#login":{
-    "props":{
-      "text":"Login"
-    }
-  },
+  
 
 */
+
+
+"menu-item#login": {
+  "props": {
+    "id": "item-fijate",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "tagTitle": "Mi cuenta",
+      "text": "Mi cuenta  ",
+    "itemProps": {
+      "type": "internal",
+      "href":"/login",
+      "noFollow": true        
+    },
+    "blockClass":"prinmenu"
+  },
+  "blocks": ["vtex.menu@2.x:submenu.accordion#login"]
+},
+"vtex.menu@2.x:submenu.accordion#login": {
+  "children": ["vtex.menu@2.x:menu#login"]
+},"vtex.menu@2.x:menu#login": {
+  "props": {
+    "orientation": "vertical",
+    "blockClass":"submenu"
+  },
+  "children": [
+    "menu-item#account"
+    //"rich-text#login"
+  ]
+},"menu-item#account":{
+  "props": {
+    "id": "item-login",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "tagTitle": "Login",
+      "text": "Login",
+    "itemProps": {
+      "type": "internal",
+      "href":"/account",
+      "noFollow": true        
+    }
+  }
+},
+
+"rich-text#login":{
+  "props":{
+    "text":"Login"
+  }
+},
   "logo#mobile": {
     "props": {
       "title": "Logo",
