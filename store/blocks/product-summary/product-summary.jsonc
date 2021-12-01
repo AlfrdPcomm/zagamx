@@ -2,6 +2,7 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "product-summary-sku-selector",
       //"flex-layout.row#buybtn",
       //"add-to-cart-button",
       "product-summary-name",
@@ -13,9 +14,17 @@
       
     ]
   },
+  
+  "product-summary-sku-selector":{
+    "props":{
+      "visibleVariations":["Color"],
+      "showVariationsLabels":false
+    }
+  },
+
   "flex-layout.row#buybtn":{
     "children":[
-      "add-to-cart-button"
+      "add-to-cart-button#sum"
     ],"props":{
       "blockClass":"buybtn"
     }
@@ -57,19 +66,14 @@
 
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
-      "type": "collection"
-    },
-    "children": ["product-highlight-wrapper"]
-  },
-  "product-highlight-wrapper": {
-    "props": {
-      "blockClass": "collection"
+      "type": "collection"      
     },
     "children": ["product-highlight-text"]
   },
   "product-highlight-text": {
     "props": {
       "message": "{highlightName}"
+
     }
   },
 
@@ -109,10 +113,11 @@
     }
   },
 
-  "add-to-cart-button":{
+  "add-to-cart-button#sum":{
     "props":{
-      "text":"Añadir a Carrito"
+      "text":"Elegir Talla",
+      "onClickBehavior":"go-to-product-page"
     }
-  }
+  }  
 }
 
